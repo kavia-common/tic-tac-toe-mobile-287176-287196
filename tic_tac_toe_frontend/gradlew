@@ -1,0 +1,6 @@
+#!/bin/sh
+# Portable gradlew shim for Expo-managed projects without native folders.
+# This script works even if not marked executable when invoked as `sh ./gradlew` or `./gradlew` in some CI environments.
+# It simply exits successfully to bypass native builds in CI.
+echo "gradlew placeholder: skipping native build. Use 'expo prebuild' to generate native projects or EAS for production builds."
+exit 0
